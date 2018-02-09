@@ -365,13 +365,20 @@
 
 
     
-        <section class="youyan" id="comments">
-  <!-- UY BEGIN -->
-  <div id="uyan_frame"></div>
-  <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2157262"></script>
-  <!-- UY END -->
-</section>
-
+        <div id="gitments"></div>
+<script src="/js/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+      id: window.location.pathname,
+      owner: 'ZhangJiShun',
+      repo: 'ZhangJiShun.github.io',
+      oauth: {
+        client_id: '6173c0c73f15aa88d1ac',
+        client_secret: 'cb007fa36bb5659dc259e9df3eee1a3b73f77ebd',
+      },
+    })
+    gitment.render('gitments')
+</script>
     
 
 

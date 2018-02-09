@@ -337,11 +337,11 @@
 
 <nav id="article-nav">
   
-    <a href="/2018/02/08/测试一/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/02/08/第一篇博客/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          测试一
+          First
         
       </div>
     </a>
@@ -400,20 +400,27 @@
 
 
     
-        <section class="youyan" id="comments">
-  <!-- UY BEGIN -->
-  <div id="uyan_frame"></div>
-  <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2157262"></script>
-  <!-- UY END -->
-</section>
-
+        <div id="gitments"></div>
+<script src="/js/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+      id: window.location.pathname,
+      owner: 'ZhangJiShun',
+      repo: 'ZhangJiShun.github.io',
+      oauth: {
+        client_id: '6173c0c73f15aa88d1ac',
+        client_secret: 'cb007fa36bb5659dc259e9df3eee1a3b73f77ebd',
+      },
+    })
+    gitment.render('gitments')
+</script>
     
 
 
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2018/02/08/测试一/" title="上一篇: 测试一">
+            <a href="/2018/02/08/第一篇博客/" title="上一篇: First">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -422,7 +429,7 @@
             <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/02/08/第一篇博客/">First</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/08/测试一/">测试一</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/08/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/02/08/测试一/">测试一</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/08/第一篇博客/">First</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/08/hello-world/">Hello World</a></li></ul>
     <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
